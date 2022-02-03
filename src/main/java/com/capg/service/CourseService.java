@@ -2,10 +2,8 @@ package com.capg.service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.capg.model.Course;
 import com.capg.repository.CourseRepository;
 
@@ -30,10 +28,4 @@ public class CourseService implements CourseServiceImpl {
 		return course.get();
 	}
 
-	@Override
-	public List<Course> findAllCourse() {
-		List<Course> course = dao.findAll();
-		return course;
-
-	}
 }
